@@ -1,0 +1,25 @@
+//Sebastian Bejarano lzr9
+//no collabotors
+//lab 4.14
+#include <iostream>
+using namespace std;
+
+int main() {
+
+      double loanAmount,paymentAmount,interestRate;
+      int i=0;
+      cin >>loanAmount>>paymentAmount>>interestRate;
+      
+      while(loanAmount>0){
+         loanAmount+=loanAmount*interestRate;
+         loanAmount-=paymentAmount;
+         i++;
+      }
+       
+      if(i==1)
+      cout << i <<" payment"<<endl;
+      else
+      cout << i <<" payments"<<endl;
+
+   return 0;
+}
